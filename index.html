@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My Giro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src=''></script>
+    <style> 
+    a 
+    { 
+        text-decoration: none; 
+    }
+        </style>
+</head>
+<body>
+    <div class="wrapper">
+<header>
+<a href="index.html"> <button id="logo"></button></a>
+<a href="index.html" class="gl">Главная</a>
+<a href="#products" class="kt">Каталог</a>
+<a href="#reviews2" class="otz">Отзывы</a>
+<a href="index.html" class="con">Контакты</a>
+<img src="images/call.png" id="call">
+<pre id="questions">Остались вопросы?</pre>
+<a href="tel:+79128443078" id="number">+7 912 844 30 78</a>
+<a href="index.html"><button id="order">Заказать звонок</button></a>
+<pre id="advant"> Наши преимущества</pre>
+</header>
+
+<main>
+
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div id="slides__1" class="slide">
+              <img src="images/slider.png" class="slide__img">
+              <a class="slide__prev" href="#slides__6" title="Prev"></a>
+              <a class="slide__next" href="#slides__2" title="Next"></a>
+            </div>
+            <div id="slides__2" class="slide">
+              <img src="images/slider2.png" class="slide__img">
+              <a class="slide__prev" href="#slides__1" title="Prev"></a>
+              <a class="slide__next" href="#slides__3" title="Next"></a>
+            </div>
+            <div id="slides__3" class="slide">
+              <img src="images/slider3.png" class="slide__img">
+              <a class="slide__prev" href="#slides__2" title="Prev"></a>
+              <a class="slide__next" href="#slides__4" title="Next"></a>
+            </div>
+            <div id="slides__4" class="slide">
+              <img src="images/slider4.png" class="slide__img">
+              <a class="slide__prev" href="#slides__3" title="Prev"></a>
+              <a class="slide__next" href="#slides__5" title="Next"></a>
+            </div>
+            <div id="slides__5" class="slide">
+              <img src="images/slider5.png" class="slide__img">
+              <a class="slide__prev" href="#slides__4" title="Prev"></a>
+              <a class="slide__next" href="#slides__6" title="Next"></a>
+            </div>
+            <div id="slides__6" class="slide">
+              <img src="images/slider6.png" class="slide__img">
+              <a class="slide__prev" href="#slides__5" title="Prev"></a>
+              <a class="slide__next" href="#slides__1" title="Next"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="diff">
+<span id="differ">В чем отличия?</span>
+<span id="differ2">Сигвей</span>
+<span id="differ3">Средний вес, менее компактный. Средний размер. Средняя скорость 18-50 км/ч.  Диаметр колес больше. Заряд батареи держиться дольше. Есть рулевое управление. Средняя грузоподемность. Средняя цена.</span>
+<a href="#products"><button class="watch">Посмотреть</button></a>
+<img id="sigway" src="images/sigway.png">
+<span id="differ4">Электросамокат</span>
+<span id="differ5">Большой вес и размер. Может складываться. Самая высокая скорость 18-100 км/ч. Средний диаметр колес. Заряд батареи держиться очень долго. Есть рулевое управление. Самое простое управление. Большая грузоподемность. Высокая цена.</span>
+<img id="elscoot" src="images/elscooter.png">
+<a href="#products"><button class="watch" id="watch2">Посмотреть</button></a>
+<img id="giros" src="images/giroscooter.png">
+<span id="differ6">Гироскутер</span>
+<span id="differ7">Компактный и легкий. Небольшой размер. Скорость ниже по сравнению с другим транспортом 8-20 км/ч. Небольшой диаметр колес. Заряд батареи меньше. Нет рулевого управления. Меньшая грузоподемность. Цена ниже.</span>
+<a href="#products"><button class="watch" id="watch3">Посмотреть</button></a>
+      </div>
+
+<span id="products">Наши продукты</span>
+
+
+<input type="radio" checked name="filters" id="All" value="All">
+<label for="All" class="filtrs" id="fall">Все</label>
+
+<input type="radio" name="filters" id="Electroscooters" value="Electroscooters">
+<label for="Electroscooters" class="filtrs" id="felectroscooters">Электросамокаты</label>
+
+<input type="radio" name="filters" id="Segways" value="Segways">
+<label for="Segways" class="filtrs" id="fsegways">Сигвеи</label>
+
+<input type="radio" name="filters" id="Gyroscooters" value="Gyroscooters">
+<label for="Gyroscooters" class="filtrs" id="fgyroscooters">Гироскутеры</label>
+
+
+<div id="filtr">
+  <img src="images/filtr.png" id="filtrlogo">
+<a href="#products"><button id="apply">Применить</button></a>
+</div>
+
+         <div class="All item">
+      <div class="Segwayss" id="Segwayss">
+<div class="product" id="prod1">
+ <img src="images/sig1.png" class="produc">
+ <span class="type" id="type1">Сигвей</span>
+ <span class="name" id="name1">Hoverbot G-4</span>
+ <span class="price" id="price1">59 999₽</span>
+ <a href="#"><button class="buy">Купить</button></a>
+</div>
+
+ <div class="product" id="prod4">
+  <img src="images/sig2.png" class="produc">
+  <span class="type" id="type4">Сигвей</span>
+  <pre class="name" id="name4">Xiaomi Ninebot mini</pre>
+  <span class="price" id="price4">30 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+  
+ <div class="product" id="prod5">
+  <img src="images/sig3.png" class="produc">
+  <span class="type" id="type5">Сигвей</span>
+  <pre class="name" id="name5">Smart Balance A8</pre>
+  <span class="price" id="price5">39 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+    </div>
+
+
+         <div class="Electroscooterss" id="Electroscooterss">
+ <div class="product" id="prod2">
+  <img src="images/el1.png" class="produc">
+  <span class="type" id="type2">Электросамокат</span>
+  <span class="name" id="name2">OKAI ES20</span>
+  <span class="price" id="price2">41 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+
+ <div class="product" id="prod6">
+  <img src="images/el2.png" class="produc">
+  <span class="type" id="type6">Электросамокат</span>
+  <pre class="name" id="name6">Ninebot SuperScooter GT2</pre>
+  <span class="price" id="price6">139 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+
+ <div class="product" id="prod7">
+  <img src="images/el3.png" class="produc">
+  <span class="type" id="type7">Электросамокат</span>
+  <pre class="name" id="name7">Xiaomi 4 pro</pre>
+  <span class="price" id="price7">70 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+      </div>
+
+
+      <div class="Gyroscooterss" id="Gyroscooterss">
+ <div class="product" id="prod3">
+  <img src="images/gyro1.png" class="produc">
+  <span class="type" id="type3">Гироскутер</span>
+  <span class="name" id="name3">Kowheel K8</span>
+  <span class="price" id="price3">14 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+
+ <div class="product" id="prod8">
+  <img src="images/gyro2.png" class="produc">
+  <span class="type" id="type8">Гироскутер</span>
+  <pre class="name" id="name8">Smart Balance 8</pre>
+  <span class="price" id="price8">11 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+
+ <div class="product" id="prod9">
+  <img src="images/gyro3.png" class="produc">
+  <span class="type" id="type9">Гироскутер</span>
+  <pre class="name" id="name9">Smart Balance SUV 10</pre>
+  <span class="price" id="price9">7 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+     </div>
+           </div>
+
+
+           <div class="Segways item" id="Segways item">
+<div class="product" id="prod1">
+ <img src="images/sig1.png" class="produc">
+ <span class="type" id="type1">Сигвей</span>
+ <span class="name" id="name1">Hoverbot G-4</span>
+ <span class="price" id="price1">59 999₽</span>
+ <a href="#"><button class="buy">Купить</button></a>
+</div>
+
+ <div class="product" id="prod4">
+  <img src="images/sig2.png" class="produc">
+  <span class="type" id="type4">Сигвей</span>
+  <pre class="name" id="name4">Xiaomi Ninebot mini</pre>
+  <span class="price" id="price4">30 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+  
+ <div class="product" id="prod5">
+  <img src="images/sig3.png" class="produc">
+  <span class="type" id="type5">Сигвей</span>
+  <pre class="name" id="name5">Smart Balance A8</pre>
+  <span class="price" id="price5">39 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+    </div>
+
+         <div class="Electroscooters item" id="Electroscooters item">
+ <div class="product" id="prod2">
+  <img src="images/el1.png" class="produc">
+  <span class="type" id="type2">Электросамокат</span>
+  <span class="name" id="name2">OKAI ES20</span>
+  <span class="price" id="price2">41 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+
+ <div class="product" id="prod6">
+  <img src="images/el2.png" class="produc">
+  <span class="type" id="type6">Электросамокат</span>
+  <pre class="name" id="name6">Ninebot SuperScooter GT2</pre>
+  <span class="price" id="price6">139 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+
+ <div class="product" id="prod7">
+  <img src="images/el3.png" class="produc">
+  <span class="type" id="type7">Электросамокат</span>
+  <pre class="name" id="name7">Xiaomi 4 pro</pre>
+  <span class="price" id="price7">70 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+      </div>
+
+      <div class="Gyroscooters item" id="Gyroscooters item">
+ <div class="product" id="prod3">
+  <img src="images/gyro1.png" class="produc">
+  <span class="type" id="type3">Гироскутер</span>
+  <span class="name" id="name3">Kowheel K8</span>
+  <span class="price" id="price3">14 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+
+ <div class="product" id="prod8">
+  <img src="images/gyro2.png" class="produc">
+  <span class="type" id="type8">Гироскутер</span>
+  <pre class="name" id="name8">Smart Balance 8</pre>
+  <span class="price" id="price8">11 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+
+ <div class="product" id="prod9">
+  <img src="images/gyro3.png" class="produc">
+  <span class="type" id="type9">Гироскутер</span>
+  <pre class="name" id="name9">Smart Balance SUV 10</pre>
+  <span class="price" id="price9">7 999₽</span>
+  <a href="#"><button class="buy">Купить</button></a>
+ </div>
+     </div>
+
+
+
+<span id="consultan">Остались вопросы?</span>
+<span id="consultantt">Задайте их нашему консультанту</span>
+<div id="consult"></div>
+<img src="images/consultant.png" id="consultant">
+<a href="#consultan"><button id="write">Написать</button></a>
+
+<span id="brands">Бренды с которыми мы сотрудничаем</span>
+<img src="images/brands.png" id="brand">
+
+<img src="images/ride.png" id="ride">
+<span id="ride1">Едьте стильно, удобно, безопасно и непринужденно</span>
+<span id="ride2">Наши устойчивые и безвредные для окружающей среды: электросамокаты, сигвеи и гироскутеры уже сейчас вносят значительный вклад в повышение мобильности населения в городах, особенно в сокращение выбросов газов в атмосферу</span>
+<span id="y15">15+</span>
+<span id="t200">200т.</span>
+<span id="yearsinn">Лет инноваций</span>
+<span id="goodrev">Хороших отзывов</span>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+<div id="line4"></div>
+<a href="#products"><button id="start">Начать</button></a>
+<div id="facts">
+<span id="fact1">10.000+</span>
+<span id="fact2">Покупок за последние 6 месяцев</span>
+<span id="fact3">4.8</span>
+<span id="fact4">Рейтинг отзывов о нашей продукции</span>
+<span id="fact5">31%</span>
+<span id="fact6">Выбросов газа успешно удалось снизить за последнее время</span>
+</div>
+<span id="reviews2">Отзывы наших покупателей</span>
+
+<div class="reviews">
+<img src="images/rev1.png" class="rev1">
+<img src="images/stars.png" class="stars">
+<span class="names">Азамат Ахметов</span>
+<span class="countries">Казахстан</span>
+<span class="reviewtext">Благодаря этому транспорту я могу сэкономить свое время и с комфортом перемещаться по городу. Он очень прост в использовании и довольно долго держит зарядку</span>
+</div>
+
+<div class="reviews" id="revieww2">
+<img src="images/rev2.png" class="rev1">
+<img src="images/stars.png" class="stars">
+<span class="names">Елена Соколова</span>
+<span class="countries">Россия</span>
+<span class="reviewtext">Я в восторге! От этого качества, удобства и скорости. Благодаря этому электросамокату я теперь гораздо быстрее добираюсь до работы</span>
+</div>
+
+<div class="reviews" id="revieww3">
+<img src="images/rev3.png" class="rev1">
+<img src="images/stars.png" class="stars">
+<span class="names">Адам Ламберт</span>
+<span class="countries">Польша</span>
+<span class="reviewtext">Отличный гироскутер. Выглядит красочно, ярко и стильно! Покупал в подарок ребенку он ему понравился и он очень обрадовался</span>
+</div>
+
+<div class="reviews" id="revieww4">
+<img src="images/rev4.png" class="rev1">
+<img src="images/stars.png" class="stars">
+<span class="names">Мария Крылова</span>
+<span class="countries">Россия</span>
+<span class="reviewtext" id="reviewtextfix2">Решила попробовать что-то новое и счастлива что купила этот электросамокат, очень легкое управление и большие удобства. Это лучшее изобретение. Однозначно стоит попробовать</span>
+</div>
+
+<div class="reviews" id="revieww5">
+<img src="images/rev5.png" class="rev1">
+<img src="images/stars.png" class="stars">
+<span class="names">Матвей Афанасьев</span>
+<span class="countries">Россия</span>
+<span class="reviewtext" id="reviewtextfix">Мне очень понравился этот сигвей. Терерь я постоянно езжу на нем по своим делам. Хочу отметить его большую прочность, так как после того как я несколько раз его ронял, он ни разу не сломался</span>
+</div>
+
+<div class="reviews" id="revieww6">
+<img src="images/rev6.png" class="rev1">
+<img src="images/stars.png" class="stars">
+<span class="names">Анастасия Устинова</span>
+<span class="countries">Россия</span>
+<span class="reviewtext">Отличная вещь. Экономлю кучу времени, просто катаюсь и отдыхаю. Постоянно езжу в магазин и на дачу. Рекомендую</span>
+</div>
+
+
+</main>
+
+<footer>
+<div id="lines"></div>
+<a href="#"><img src="images/vk.png" id="vk"></a>
+<a href="https://www.youtube.com/"><img src="images/youtube.png" id="youtube"></a>
+<a href="#"><img src="images/viber.png" id="viber"></a>
+<a href="#"><img src="images/telegram.png" id="telegram"></a>
+<span id="news">Подпишитесь на новости</span>
+<span id="morenews">Будьте всегда в курсе наших новостей, мероприятий, скидок и акций.
+  Откажитесь от подписки в любое удобное для вас время одним щелчком мыши.</span>
+  <div id="subsclabel">
+<span id="email">Введите свой Email </span>
+<img src="images/emaillogo.png" id="emaillogo">
+<a href="index.html"><button id="send">Отправить</button></a>
+  </div>
+<span id="links">Ссылки</span>
+<span id="productss">Продукты</span>
+<span id="support">Поддержка</span>
+<a href="#" id="history" class="alllinks">Наша история</a>
+<a href="#" id="creators" class="alllinks">Создатели</a>
+<a href="#" id="owners" class="alllinks">Владельцы</a>
+<a href="#" id="aboutus" class="alllinks">О нас</a>
+<a href="#" id="blog" class="alllinks">Блог</a>
+
+<a href="#" id="peculiarities" class="alllinks">Особенности</a>
+<a href="#" id="guide" class="alllinks">Руководство по покупке</a>
+<a href="#" id="terms" class="alllinks">Правила и условия</a>
+
+<a href="#" id="ref" class="alllinks">Справочный центр</a>
+<a href="#" id="faq" class="alllinks">FAQ Частые вопросы</a>
+<a href="#" id="privacy" class="alllinks">Политика конфиденциальности</a>
+<a href="#" id="use" class="alllinks">Условия использования</a>
+</footer>
+
+<a href="#logo"><button class="fixed-button" id="up">Наверх</button></a>
+
+    </div>
+</body>
+</html>
